@@ -18,7 +18,12 @@ function App() {
       window.google.accounts.id.initialize({
         client_id: "907100418669-pa4c1oeginl8k39430qsv4gjgpdp3jmi.apps.googleusercontent.com",
         callback: handleGoogleSignIn,
-      })
+      });
+
+      window.google.accounts.id.renderButton(
+          document.getElementById("buttonDiv"),
+          { theme: "outline", size: "large" }  // customization attributes
+      );
     }
 
     const script = document.createElement("script")
@@ -64,11 +69,7 @@ function App() {
         >
           Learn React
         </a>
-        <div id="g_id_onload"
-             data-client_id="907100418669-pa4c1oeginl8k39430qsv4gjgpdp3jmi.apps.googleusercontent.com"
-             data-callback={handleGoogleSignIn}>
-        </div>
-        <div className={"g_id_signin"} />
+        <div id="buttonDiv" />
         <div className="fb-login-button" data-width="" data-size="large" data-button-type="continue_with"
              data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
       </header>
