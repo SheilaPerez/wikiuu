@@ -17,6 +17,7 @@ function App() {
         >
           Learn React
         </a>
+        <div className="g-signin2" data-onsuccess="onSignIn"></div>
       </header>
     </div>
   );
