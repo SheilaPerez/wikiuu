@@ -28,20 +28,20 @@ function App() {
     script.id = "google-client-script"
     document.querySelector("body")?.appendChild(script)
 
+    const handleGoogleSignIn = (res) => {
+      if (!res.clientId || !res.credential) return
+
+      console.log("respones", res);
+      // Implement your login mutations and logic here.
+      // Set cookies, call your backend, etc.
+    }
+
     return () => {
       // Cleanup function that runs when component unmounts
       window.google?.accounts.id.cancel()
       document.getElementById("google-client-script")?.remove()
     }
   }, []);
-
-  const handleGoogleSignIn = (res) => {
-    if (!res.clientId || !res.credential) return
-
-    console.log("respones", res);
-    // Implement your login mutations and logic here.
-    // Set cookies, call your backend, etc.
-  }
 
   return (
     <div className="App">
