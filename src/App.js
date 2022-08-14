@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  function handleCredentialResponse(googleUser) {
+    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,7 +21,11 @@ function App() {
         >
           Learn React
         </a>
-        <div className="g-signin2" data-onsuccess="onSignIn"></div>
+        <div id="g_id_onload"
+             data-client_id="907100418669-pa4c1oeginl8k39430qsv4gjgpdp3jmi.apps.googleusercontent.com"
+             data-callback="handleCredentialResponse">
+        </div>
+        <div className="g_id_signin" data-type="standard"></div>
       </header>
     </div>
   );
