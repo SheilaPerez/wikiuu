@@ -43,6 +43,12 @@ function App() {
     // Set cookies, call your backend, etc.
   }
 
+  function callbackFacebook() {
+    window.FB.getLoginStatus(function(response) {
+      console.log(response);
+    });
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -63,6 +69,8 @@ function App() {
              data-callback={handleGoogleSignIn}>
         </div>
         <div className={"g_id_signin"} />
+        <div className="fb-login-button" data-width="" data-size="large" data-button-type="continue_with"
+             data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
       </header>
     </div>
   );
