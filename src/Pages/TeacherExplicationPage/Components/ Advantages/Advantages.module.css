@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    margin: 60px 150px;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.subtitle {
+    color: grey;
+    text-align: center;
+    margin: 0;
+}
+
+.subtitleMiddle {
+    color: grey;
+    text-align: center;
+    margin: 0;
+    padding: 0px 54px;
+}
+
+.lines {
+    text-align: center;
+    margin: 8px;
+    color: #FFDE6A;
+}

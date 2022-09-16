@@ -1,0 +1,11 @@
+.registerBtn {
+    color: black;
+    background-color: #FFDE6A;
+    border-radius: 5px;
+    padding: 15px 31px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    margin-top: 14px;
+    font-family: 'Inter', sans-serif;
+}

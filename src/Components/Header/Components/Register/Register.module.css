@@ -1,0 +1,11 @@
+.register {
+    color: white;
+    background-color: #8037F7;
+    border-radius: 5px;
+    padding: 8px 13px;
+    margin-left: 10px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,23 @@
+
+.inputStyle {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px grey solid;
+    margin-top: 16px;
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.passwordInfo {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+
+.inputCheckContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}

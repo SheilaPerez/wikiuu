@@ -1,0 +1,13 @@
+.cursosRelacionados {
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    font-weight: 900;
+    margin-right: 30px;
+}
+
+.cursesExemplesContainer {
+    padding: 28px 150px;
+    display: flex;
+    align-items: center;
+    background-color: #F1F4F7; 
+}

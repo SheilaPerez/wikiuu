@@ -1,0 +1,42 @@
+.wikiuu {
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+}
+
+.logoImage {
+    background-image: url(../../Assets/owl.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.headerLogo {
+    display: flex;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
+
+.headerButtonsContainer {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.headerButtons {
+    margin-right: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.shopBtn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}

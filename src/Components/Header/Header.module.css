@@ -1,0 +1,26 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
+
+.headerButtons {
+    display: flex;
+    align-items: center;
+}
+
+.wikiuu {
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+}
+
+.logoImage {
+    background-image: url(../../Assets/owl.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.headerLogo {
+    display: flex;
+}

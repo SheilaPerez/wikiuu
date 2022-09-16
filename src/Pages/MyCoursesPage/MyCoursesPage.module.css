@@ -1,0 +1,22 @@
+.titleContainer {
+    background-color: #8037F7;
+    width: 100%;
+    padding: 15px;
+}
+
+.title {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.text {
+    font-size: 30px;    
+}
+
+.textContainer {
+    text-align: center;
+    padding: 140px 0px;
+    font-family: 'Inter', sans-serif;
+}

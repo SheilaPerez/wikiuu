@@ -1,0 +1,39 @@
+.descriptionTitleContainer {
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+
+.descriptionTitleContainer::before {
+    content: "";
+    background-image: url(../../../../Assets/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+.titleSubtitle {
+    padding: 87px 150px;
+    position: relative;
+    margin-right: 522px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    margin-top: 0px;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-right: 100px;
+}

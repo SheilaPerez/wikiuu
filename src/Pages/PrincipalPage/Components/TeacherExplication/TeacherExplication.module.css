@@ -1,0 +1,37 @@
+.teacherExplicationContainer {
+    padding: 28px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.teacherContainer {
+    background-color: #F1F4F7; 
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.image {
+    background-image: url(../../../../Assets/imagen.jpeg);
+    width: 870px;
+    height: 300px;
+    background-size: cover;
+    margin-right: 175px;
+
+}
+
+.line {
+    margin: 14px 0px 0px 0px;
+    background-color: #8037F7;
+    width: 90px;
+    height: 4px;
+}
