@@ -1,5 +1,6 @@
-import { FC } from "react"
-import styles from "./InputStyle.module.css"
+import { FC, useState } from "react"
+import styles from "./InputPassword.module.css"
+import { TbEyeOff, TbEye } from "react-icons/tb";
 
 interface Props {
     placeholder: string;
@@ -7,9 +8,18 @@ interface Props {
 }
 
 const InputPassword: FC<Props> = ({ placeholder, onChangePassword }) => {
+    const [passwordShow, setPasswordShow] = useState(false);
+
+    const handleClickEye = () => {
+        setPasswordShow(!passwordShow);
+    }
+
     return (
-        <input type="text" placeholder={placeholder} onChange={(e) => onChangePassword(e)} className={styles.inputStyle}></input>
+        <div className={styles.inputContainer}>
+            <input type={passwordShow ? "text" : "password"} placeholder={placeholder} onChange={(e) => onChangePassword(e)} className={styles.inputStyle}></input>
+            <div className={styles.eye} onClick={handleClickEye}>{passwordShow ? <TbEye/> : <TbEyeOff/>}</div>
+        </div>
     )
 }
 
-export default InputPassword
+export default InputPassword;

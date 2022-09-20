@@ -7,7 +7,6 @@ import { useContext } from 'react';
 import GlobalContext from '../../../../Context/GlobalContext';
 import InputPassword from './Components/InputPassword';
 import { FC } from 'react';
-
 interface Props {
 
 }
@@ -32,7 +31,7 @@ const RegisterForm: FC<Props> = () => {
     const handleSendForm = () => {
         setFormSent(true);
         if (isEmailValid && firstPassword.length >= 8 && firstPassword === secondPassword) {
-            setGlobalState({ ...globalState, modalState: {...globalState.modalState, isRegisterModalOpen: false }});
+            setGlobalState({isLogged: true, modalState: { ...globalState.modalState, isRegisterModalOpen: false }});
             navigate("/mycourses");
         }
     }
