@@ -1,0 +1,13 @@
+.studentsInfo {
+    font-family: 'Inter', sans-serif;
+    color: rgba(128, 128, 128, 0.842);
+    font-size: 15px;
+    margin: 4px 0px;
+}
+
+.numsInfo {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    color: rgb(106, 100, 100);
+    margin: 0;
+}

@@ -10,6 +10,7 @@ import PasswordModal from './Components/PasswordModal';
 import HeaderLogged from './Components/HeaderLogged';
 import { initialGlobalState, GlobalContextProvider } from './Context/GlobalContext';
 import TeacherExplicationPage from './Pages/TeacherExplicationPage';
+import TeacherPage from './Pages/TeacherPage';
 
 function App() {
     const [globalState, setGlobalState] = useState(initialGlobalState);
@@ -76,6 +77,7 @@ function App() {
                         <Route path="/teachers" element={<TeacherExplicationPage>
                         {globalState.modalState?.isRegisterModalOpen && <RegisterModal handleClickCloseModal={handleCloseModal} handleClickStartSession={onClickStartSession} handleClickCloseModalBtn={onClickCloseModalBtn}></RegisterModal>}
                         </TeacherExplicationPage>}></Route>
+                        <Route path="/teacherpage/*" element={<TeacherPage></TeacherPage>}></Route>    
                     </Routes>
                     <Footer></Footer>
                 </Router>

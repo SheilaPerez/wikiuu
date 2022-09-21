@@ -1,7 +1,8 @@
 import styles from './HeaderLogged.module.css';
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { FC } from 'react';
-
+import TeachInBtn from './Components/TeachInBtn';
+import MyLearning from './Components/MyLearning';
 interface Props {
 
 }
@@ -14,8 +15,8 @@ const HeaderLogged: FC<Props> = () => {
                 <p className={styles.wikiuu}>Wikiuu</p>
             </div>
             <div className={styles.headerButtonsContainer}>
-                <button className={styles.headerButtons}>Enseñar en Udemy</button>
-                <button className={styles.headerButtons}>Mi aprendizaje</button>
+                <TeachInBtn></TeachInBtn>
+                <MyLearning></MyLearning>
                 <button className={styles.shopBtn}><RiShoppingCart2Fill/></button>
             </div>
         </div>
