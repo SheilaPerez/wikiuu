@@ -1,0 +1,35 @@
+.videoImage {
+    width: 119px;
+    height: 73px;
+    background-color: blueviolet;
+}
+
+.videoInfoContainer {
+    display: table-row;
+
+}
+
+.subtitleInfo {
+    border-top: 1px solid rgb(227, 219, 219);
+    border-bottom: 1px solid rgb(227, 219, 219);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    width: 140px;
+}
+
+.subtitleInfoFirts {
+    border-top: 1px solid rgb(227, 219, 219);
+    border-left: 1px solid rgb(227, 219, 219);
+    border-bottom: 1px solid rgb(227, 219, 219);
+    border-top-left-radius: 10px;
+    padding: 20px;
+    width: 138px;
+}
+
+.subtitleInfoTitle {
+    border-top: 1px solid rgb(227, 219, 219);
+    border-bottom: 1px solid rgb(227, 219, 219);
+    width: 220px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}

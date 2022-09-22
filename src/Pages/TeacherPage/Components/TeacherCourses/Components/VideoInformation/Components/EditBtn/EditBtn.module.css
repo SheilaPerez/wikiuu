@@ -1,0 +1,15 @@
+.edit {
+    border-top: 1px solid rgb(227, 219, 219);
+    border-right: 1px solid rgb(227, 219, 219);
+    border-bottom: 1px solid rgb(227, 219, 219);
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+.editBtn {
+    background-color: white;
+    border: 1px solid rgb(227, 219, 219);
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

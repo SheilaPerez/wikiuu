@@ -1,7 +1,6 @@
 .menuContainer {
     background-color: black;
     width: 150px;
-    padding-left: 60px;
-    padding-top: 60px;
-
+    padding: 60px 60px 0px 32px;
+   
 }

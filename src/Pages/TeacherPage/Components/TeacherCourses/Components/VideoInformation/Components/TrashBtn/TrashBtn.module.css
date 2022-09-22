@@ -1,0 +1,12 @@
+.trash {
+    border-top: 1px solid rgb(227, 219, 219);
+    border-bottom: 1px solid rgb(227, 219, 219);
+}
+
+.trashBtn {
+    background-color: white;
+    border: 1px solid rgb(227, 219, 219);
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
