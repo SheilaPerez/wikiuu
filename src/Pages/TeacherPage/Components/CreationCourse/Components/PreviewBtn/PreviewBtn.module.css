@@ -1,0 +1,14 @@
+.previewBtn {
+    border: 1px solid rgb(227, 219, 219);
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: grey;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    margin-right: 10px;
+}
+
+.previewBtn:active {
+    color: black;
+}

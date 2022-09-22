@@ -1,0 +1,30 @@
+.cheboxContainers {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.contentContainer {
+    display: flex;
+}
+
+.allCheboxContainers {
+ margin: 44px 0px 100px 80px;
+
+}
+
+.select {
+    margin-left: 90px;
+    width: 200px;
+}
+
+.durationInput{
+    margin-left: 64px;
+    width: 200px;
+    height: 40px;
+}
+
+.recomendedInput {
+    margin-left: 28px;
+    width: 200px;
+    height: 40px;
+}

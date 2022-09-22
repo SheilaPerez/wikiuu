@@ -1,0 +1,10 @@
+.saveBtn {
+    background-color: #63BAAA;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    padding: 9px 25px;
+    cursor: pointer;
+}

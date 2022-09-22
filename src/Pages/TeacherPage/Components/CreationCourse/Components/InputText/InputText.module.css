@@ -1,0 +1,17 @@
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.input {
+    width: 400px;
+    height: 30px;
+}
