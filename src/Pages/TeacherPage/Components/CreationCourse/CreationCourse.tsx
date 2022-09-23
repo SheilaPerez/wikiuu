@@ -1,13 +1,23 @@
 import styles from './CreationCourse.module.css';
 import PreviewBtn from './Components/PreviewBtn';
 import SaveBtn from './Components/SaveBtn';
-import Line from './Components/Line';
-import InputText from './Components/InputText';
-import Description from './Components/Description';
-import Content from './Components/Content';
-import Cover from './Components/Cover';
+import Principal from './Components/Principal';
+import Temary from './Components/Temary';
+import { useState } from 'react';
 
 const CreationCourse = () => {
+    const [principalOn, setPrincipalOn] = useState(true);
+    const [temariOn, setTemariOn] = useState(false);
+    
+    const handleClickTemariOn = () => {
+        setTemariOn(true);
+        setPrincipalOn(false);
+    }
+
+    const handleClickprincipalOn = () => {
+        setTemariOn(false);
+        setPrincipalOn(true);
+    }
     return (
         <div className={styles.container}>
             <h3 className={styles.principalTitle}>Creación del curso</h3>
@@ -16,18 +26,11 @@ const CreationCourse = () => {
                 <SaveBtn></SaveBtn>
             </div>
             <div className={styles.creationStartBtns}>
-                <button type="button" className={styles.principalBtn}>principal</button>
-                <button type="button" className={styles.temariBtn}>temario</button>
+                <button type="button" className={styles.principalBtn} onClick={handleClickprincipalOn}>principal</button>
+                <button type="button" className={styles.temariBtn} onClick={handleClickTemariOn}>temario</button>
             </div>
-            <Line></Line>
-            <InputText title={"Titulo del curso"}></InputText>
-            <InputText title={"Subtitulo"}></InputText>
-            <Line></Line>
-            <Cover></Cover>
-            <Line></Line>
-            <Description></Description>
-            <Line></Line>
-            <Content></Content>
+            {temariOn ? <Temary></Temary> : <Principal></Principal>}
+          
         </div>
     )
 }

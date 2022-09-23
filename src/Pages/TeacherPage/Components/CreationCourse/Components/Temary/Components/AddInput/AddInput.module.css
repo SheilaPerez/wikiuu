@@ -1,0 +1,11 @@
+.addTitleInput {
+    margin-bottom: 30px;
+    width: 400px;
+    height: 30px;
+}
+
+.titleInput {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+}
