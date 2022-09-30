@@ -16,7 +16,7 @@ const RegisterModal: FC<Props> = ({ handleClickCloseModal, handleClickStartSessi
     
     return ReactDOM.createPortal(
     <>
-        <div className={styles.containerModal} onClick={handleClickCloseModal}>
+        <div className={styles.containerModal} onClick={handleClickCloseModal} role={"register-modal"}>
             <div className={styles.modal} onClick={stopPropagation}>
                 <button className={styles.closeBtn} type="button" onClick={handleClickCloseModalBtn}>X</button>
                 <div className={styles.yellowContainer}>
@@ -36,7 +36,6 @@ const RegisterModal: FC<Props> = ({ handleClickCloseModal, handleClickStartSessi
                         <p>Ya eres miembro?</p>
                             <button className={styles.startSession} onClick={handleClickStartSession}>Iniciar sesión</button>
                     </div>
-                    <div className={styles.blackLine}></div>
                     <p className={styles.textRegisterConditions}>Al registrarte, aceptas los Términos de servicio y Política de privacidad de Skillshare. Esta página está protegida por reCAPTCHA y está sujeta a los Términos del Servicio y la Política de Privacidad de Google.</p>        
                 </div>
             </div>

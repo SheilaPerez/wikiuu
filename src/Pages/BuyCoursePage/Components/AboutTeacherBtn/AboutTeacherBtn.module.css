@@ -1,0 +1,10 @@
+.aboutBtn {
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    color: grey;
+    padding: 7px;
+    font-size: 11px;
+    cursor: pointer;
+}

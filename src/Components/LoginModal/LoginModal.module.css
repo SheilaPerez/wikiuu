@@ -14,7 +14,6 @@
     position: relative;
     background-color:white;
     width: 645px;
-    height: 84vh; 
     display: flex;
     flex-direction: row;
 }

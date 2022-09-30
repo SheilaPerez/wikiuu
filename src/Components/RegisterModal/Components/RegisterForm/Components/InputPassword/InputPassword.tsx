@@ -5,9 +5,10 @@ import { TbEyeOff, TbEye } from "react-icons/tb";
 interface Props {
     placeholder: string;
     onChangePassword: (e: any) => void;
+    role?: string;
 }
 
-const InputPassword: FC<Props> = ({ placeholder, onChangePassword }) => {
+const InputPassword: FC<Props> = ({ placeholder, onChangePassword, role }) => {
     const [passwordShow, setPasswordShow] = useState(false);
 
     const handleClickEye = () => {
@@ -16,7 +17,7 @@ const InputPassword: FC<Props> = ({ placeholder, onChangePassword }) => {
 
     return (
         <div className={styles.inputContainer}>
-            <input type={passwordShow ? "text" : "password"} placeholder={placeholder} onChange={(e) => onChangePassword(e)} className={styles.inputStyle}></input>
+            <input role={role} type={passwordShow ? "text" : "password"} placeholder={placeholder} onChange={(e) => onChangePassword(e)} className={styles.inputStyle}></input>
             <div className={styles.eye} onClick={handleClickEye}>{passwordShow ? <TbEye/> : <TbEyeOff/>}</div>
         </div>
     )

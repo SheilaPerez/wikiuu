@@ -1,0 +1,9 @@
+.buyBtn {
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: #8037F7;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+}

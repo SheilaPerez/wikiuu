@@ -7,7 +7,7 @@ interface Props {
 const RegisterFormBtn: FC<Props> = ({handleClickSendRegister}) => {
     return (
         <div>
-            <button type="button" onClick={handleClickSendRegister} className={styles.register}>Regístrate</button>
+            <button type="button" onClick={handleClickSendRegister} className={styles.register} role={'register-form-btn'}>Regístrate</button>
         </div>
     )
 }

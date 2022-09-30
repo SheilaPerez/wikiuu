@@ -8,7 +8,7 @@ interface Props {
 const Register: FC<Props> = ({ handleClickModal }) => {
     return (
         <div>
-            <button type="button" onClick={handleClickModal} className={styles.register}>Registro</button> 
+            <button type="button" onClick={handleClickModal} role={"register-open-modal"} className={styles.register}>Registro</button> 
         </div>
     )
 }

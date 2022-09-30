@@ -1,0 +1,14 @@
+.contentBtn {
+    text-transform: uppercase;
+    border-bottom: 3px solid #FFDE6A;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding: 7px;
+    font-size: 11px;
+    margin-right: 19px;
+    cursor: pointer;
+}

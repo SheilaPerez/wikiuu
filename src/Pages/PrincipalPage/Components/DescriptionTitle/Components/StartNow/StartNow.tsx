@@ -6,7 +6,7 @@ interface Props {
 const StartNow: FC<Props> = ({ handleClickOpenLoginModal }) => {
     return (
         <div>
-            <button type="button" className={styles.startnowBtn} onClick={handleClickOpenLoginModal}>Empezar ahora</button>
+            <button role="start-now-open-login" type="button" className={styles.startnowBtn} onClick={handleClickOpenLoginModal}>Empezar ahora</button>
         </div>
     )
 }

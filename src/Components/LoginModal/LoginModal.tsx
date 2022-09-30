@@ -19,7 +19,7 @@ const LoginModal: FC<Props> = ({ handleClickCloseLoginModal, handleClickRegister
     }
 
     return ReactDOM.createPortal (
-    <div>
+    <div role={"login-modal"}>
         <div className={styles.containerModal} onClick={handleClickCloseLoginModal}>
             <div className={styles.modal} onClick={stopPropagation}>
                 <button type="button" className={styles.closeBtn} onClick={handleClickCloseLoginBtn}>X</button>

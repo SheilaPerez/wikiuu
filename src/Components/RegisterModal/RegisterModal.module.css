@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 18px 0px;
+    margin: 18px 0px 0px;
 }
 
 .startSession {
@@ -96,6 +96,7 @@
 .textRegisterConditions {
     font-size: 9px;
     text-align: center;
+    margin: 0px;
 }
 
 .closeBtn {

@@ -9,7 +9,7 @@ export interface GlobalState {
     }
 };
 
-interface GlobalContextProps {
+export interface GlobalContextProps {
     globalState: GlobalState;
     setGlobalState: (globalState: GlobalState) => void;
 }
