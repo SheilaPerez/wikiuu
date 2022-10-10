@@ -36,7 +36,7 @@ const LoginModal: FC<Props> = ({ handleClickCloseLoginModal, handleClickRegister
                         <div className={styles.doubleBlackLine}></div>
                     </div>
                     <RegisterLoginForm></RegisterLoginForm>
-                        <button className={styles.forguetPassword} onClick={handleClickForgetPassword}>Olvidaste la contraseña?</button>
+                        <button className={styles.forguetPassword} onClick={handleClickForgetPassword} role={"forgot-password-btn"}>Olvidaste la contraseña?</button>
                     <div className={styles.memberquestion}>
                         <p>Aún no eres miembro?</p>
                         <button type="button" onClick={handleClickRegister} className={styles.startSession}>Regístrate</button>

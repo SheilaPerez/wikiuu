@@ -6,7 +6,7 @@
 
 .descriptionTitleContainer::before {
     content: "";
-    background-image: url(../../../../Assets/portada.jpg);
+    background-image: url('../../../../Assets/teacher.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
